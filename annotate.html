@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <style>
+        body {
+            background-color: lightgray;
+        }
+        select {
+            font-size:16px;
+            padding: 4px;
+        }
+        #draggable-lens {
+            border: 2px solid #d4d4d4;
+            position: absolute;
+            left: 0;
+            top: 0;}
+        * {box-sizing: border-box;}
+        .global-container {
+            position: relative;
+            display: flex;
+            margin-top: 10px;
+        }
+        #detail-image {
+            margin-left: 5px;
+            width: 800px;
+            height: 800px;
+            position: relative;
+            overflow: hidden;
+        }
+        textarea {
+            width: 400px;
+            height: 300px;
+        }
+        #preview-button {
+            font-size:16px;
+            padding: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<select id="dropdown">
+    <option>Select frame</option>
+</select>
+
+<div class="global-container">
+
+    <div>
+        <div>
+            <img id="preview-image" width="400" height="auto">
+            <div id="draggable-lens">
+            </div>
+        </div>
+        <textarea rows="4" cols="30" id="infos-textarea"></textarea>
+    </div>
+
+    <div id="detail-image"></div>
+
+    <div id="new-objects-templates-placeholder"></div>
+
+</div>
+
+<div>
+    <button id="preview-button" type="button">Export preview</button>
+</div>
+
+
+<script
+        src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+<script
+        src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="jquery.csv.js"></script>
+<script type="text/javascript" src="jQueryRotate.js"></script>
+<script type="text/javascript" src="annotate.js"></script>
+<script type="text/javascript" src="preview.js"></script>
+</body>
+</html>

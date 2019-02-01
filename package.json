@@ -1,0 +1,15 @@
+{
+  "name": "bee_annotation",
+  "version": "1.0.0",
+  "description": "Annotation tool to mark objects in images.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Okinawa Institute of Science & Technology",
+  "license": "SEE LICENSE IN LICENSE",
+  "dependencies": {
+    "express": "^4.16.4",
+    "image-size": "^0.6.3"
+  }
+}
